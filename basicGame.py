@@ -1,3 +1,5 @@
+''' Creatin a basic Snake Game '''
+
 import pygame
 
 pygame.init()
