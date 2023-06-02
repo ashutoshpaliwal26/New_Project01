@@ -5,6 +5,8 @@ import pygame
 pygame.init()
 # Creating Screen for Our Game
 screen = pygame.display.set_mode((600,600))
+# Giving Title To our Game.
+Title = pygame.display.set_caption("Snakey PY")
 
 # Creating Colour Variable 
 white = 255,255,255
@@ -29,6 +31,18 @@ while running:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT :
                 player_x = player_x + 20
+        
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT :
+                player_x = player_x - 20
+        
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_UP :
+                player_y = player_y - 20
+        
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_DOWN :
+                player_y = player_y + 20
         
     screen.fill(white) #To giving background to our screen
 
