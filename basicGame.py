@@ -5,6 +5,7 @@ import pygame
 pygame.init()
 # Creating Screen for Our Game
 screen = pygame.display.set_mode((600,600))
+
 # Giving Title To our Game.
 Title = pygame.display.set_caption("Snakey PY")
 
